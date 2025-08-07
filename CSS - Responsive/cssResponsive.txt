@@ -1,0 +1,93 @@
+Hi Css responsive Ella cheyalo Explain Chestha.
+2 ways lo cheyachu 
+*mobile - > tab -> desktop
+*desktop -> tab -> mobile (mostly programmers  choose this !)
+general ga views anevi desktop ki (above 1024) , tab ki(between 1023 - 176) , mobile ki (below <176) e sizes lo untayi
+manam e views vachelaga cheyali ante @media , max-width , min-width e properties ni use cheyali 
+@media - responsive ga cheyadham kosam use chestaru 
+max-width = maximun width (ante nenu 500px ichanu ante minimum yenta ayina undachu like 320px , 450px but maximun px matram 500px minchi undakuradhu)
+min-width = same as max-width(ante nenu 500px ichanu ante maximum yenta ayina undachu like 1024px , 700px but minimum matram 500px kanna takuva undakuradhu)
+
+
+/* Desktop (≥1024px) - Base Styles */
+.about {
+    width: 100%;
+    padding: 100px 0;
+  }
+  
+  .about .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .about .container .content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .about-img {
+    flex: 1;
+    min-width: 400px;
+    max-width: 500px;
+  }
+
+
+/* Tablet (768px-1023px) */
+  @media (max-width: 1023px) {
+    .about {
+      padding: 80px 0;
+    }
+  
+    .about .container .content {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+  
+    .about-img {
+      min-width: unset;
+      max-width: 450px;
+    }
+  
+    .about-info {
+      text-align: center;
+      max-width: 100%;
+    }
+  
+    .about-info .professional-list {
+      justify-content: center;
+    }
+  }
+  
+
+  /* Mobile (<768px) */
+  @media (max-width: 767px) {
+    .about {
+      padding: 60px 0;
+    }
+  
+    .about-img {
+      max-width: 100%;
+    }
+  
+    .about-info .description h3 {
+      font-size: 1.8em;
+    }
+  
+    .about-info .description h4 {
+      font-size: 1.1em;
+    }
+  
+    .about-info .professional-list {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+
+explanation e example code chusthe basic ga desktop ki nenu px mention cheyaledhu . kani tab view ki vasthe matram max-width : 1023 ani ichanu ante adi ippudu 1023 kanna tab view lo yekuva screen ni occupy cheyaledhu so meru develop chesina project anedi neet ga vastundhi kani yenta chinna chesina adi chinnadi ayipotundhu . aa problem rakundha mobile view kosam max-width:767px ichanu ippudu tab view ni yepudu ayithe 767px kana chinnadi chestamo adi apudu mobile view change avvutundhi . 
+
+miku ardham kakapothe nenu zip file send chestha adi okkasari vs code open chesi css code ni change chestu try cheyandi ardham avutundhi 
+
+                                                                                                           Thank Y00ooooou 

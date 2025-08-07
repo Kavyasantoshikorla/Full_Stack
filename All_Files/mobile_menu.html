@@ -1,0 +1,126 @@
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <title>Mobile_options</title>
+        <style>
+            .container{
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                width: 200px;
+                height: 100svh;
+                left: 0px;
+                background-color: rgb(237, 202, 157);
+            }
+            .container div{
+                border-bottom: 1px solid black;
+                padding: 10px;
+            }
+            .container div:hover{
+                background-color: antiquewhite;
+                border-radius: 2px;
+            }
+            .container span{
+                font-size: 50px;
+                color: rgb(149, 89, 89);
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+         <div class="container">
+            <span onclick="Close()">&times;</span>
+            <div>Home</div>
+            <div>About</div>
+            <div>Contact</div>
+            <div>Services</div>
+            <div>Pricing</div>
+         </div>
+         <script>
+            function Close()
+            {
+                document.getElementsByClassName("container")[0].style = "left:-200px";
+            }
+         </script>
+         
+    </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="menu_toggle.css">
+  <style>
+    body{
+  /* background: linear-gradient(135deg, rgba(19, 39, 67, 0.8), rgba(31, 64, 104, 0.9)); */
+  background-color: #2a9d8f;
+}
+.menu{
+  font-size: 25px;
+  color: white;
+}
+.menu_options{
+  width: 220px;
+  height: 100svh;
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  /* background: linear-gradient(145deg, #0a1d3a, #102944); */
+  background-color: black;
+  position: absolute;
+  top:0px;
+  left: 0px;
+  transition: left 0.5s linear;
+  padding: 15px 10px;
+  box-sizing: border-box;
+}
+.menu{
+  cursor: pointer;
+}
+.menu_options div{
+  cursor: pointer;
+  color: white;
+  align-self: stretch;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+.menu_options span{
+  color: white;
+  width: fit-content;
+  font-size: 50px;
+}
+.menu_options div:hover{
+  /* border-radius: 5px; */
+  background-color:rgba(255,255,255,0.2);
+  border: 2px solid  #00f2fe;
+  transform: scale(1.1);
+}
+  </style>
+</head>
+<body>
+  <div class="menu" onclick="Open()">&#9776;</div>
+  <div class="menu_options">
+    <span onclick="Close()">&times;</span>
+    <div>Home</div>
+    <div>Contact</div>
+    <div>Pricing</div>
+    <div>Support</div>
+    <div>Services</div>
+  </div>
+
+  <script>
+    function Close()
+    {
+      document.getElementsByClassName("menu_options")[0].style = "left:-220px;"
+    }
+    function Open()
+    {
+      document.getElementsByClassName("menu_options")[0].style = "left:0px; top:0px;"
+    }
+  </script>
+</body>
+</html>

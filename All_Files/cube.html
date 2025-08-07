@@ -1,0 +1,160 @@
+<html>
+    <head>
+        <title>My Cube</title>
+        <style>
+            body{
+                background-color: black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                perspective: 600px;
+            }
+        .cube{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 200px;
+            transform-style: preserve-3d;
+            animation: myanimation 5s infinite linear;
+            position: relative;
+        }
+        @keyframes myanimation {
+            100%{
+             transform:rotateX(360deg) rotateY(360deg);
+            }
+        }
+        .left{
+            display: grid;
+            grid-template-columns: repeat(3,3fr);
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            transform: rotateY(90deg) translateZ(100px);
+        }
+        .right{
+            display: grid;
+            grid-template-columns: repeat(3,3fr);
+             position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            transform: rotateY(90deg) translateZ(-100px);
+        }
+        .top{
+            display: grid;
+            grid-template-columns: repeat(3,3fr);
+             position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            transform: rotateX(90deg) translateZ(100px);
+        }
+        .bottom{
+            display: grid;
+            grid-template-columns: repeat(3,3fr);
+             position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            transform: rotateX(90deg) translateZ(-100px);
+        }
+        .front{
+            display: grid;
+            grid-template-columns: repeat(3,3fr);
+             position: absolute;
+            width: 200px;
+            height: 200px;
+            /* opacity: 0.5; */
+           background-color: blue;
+           transform: translateZ(100px);
+        }
+        .back{
+            display: grid;
+            grid-template-columns: repeat(3,3fr);
+             position: absolute;
+            width: 200px;
+            height: 200px;
+            /* opacity: 0.5; */
+            background-color: yellow;
+           transform: translateZ(-100px);
+        }
+        .con{
+            border: 2px solid black;
+            border-radius: 16px;
+        }
+        </style>
+    </head>
+    <body>
+     <div class="cube">
+        <div class="left">
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+        </div>
+        <div class="right">
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+        </div>
+        <div class="top">
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+        </div>
+        <div class="bottom">
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+        </div>
+        <div class="front">
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+        </div>
+        <div class="back">
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+        </div>
+     </div>
+
+    </body>
+</html>

@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <title>My Page</title>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <style>
+            .header{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: green;
+                padding: 10px 30px;
+
+            }
+            .logo{
+               width: 60px;
+               height: 60px;
+               border-radius: 50%;
+            }
+            .items{
+                display: flex;
+                gap: 70px;
+            }
+            .inside{
+                color:orange;
+                font-weight: bold;
+                cursor: pointer;
+            }
+            .options{
+                display: none;
+                width: 130px;
+                position: absolute;
+                font-weight:lighter;
+                background-color: green;
+            }
+            .options div{
+                color: white;
+                 border-bottom: 1px solid white;
+                 padding: 10px;
+            }
+            .inside:hover .options{
+                background-color: green;
+                display: block;
+            }
+            .user {
+                position: relative;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background-color: orange;
+                cursor: pointer;
+            }
+            .user_list {
+                display: none;
+                width: 150px;
+                position: absolute;
+                top: 100%;
+                /* left: -100px; */
+                right: 0px;
+                background-color: green;
+            }
+            .user_list div {
+                color: white;
+                border-bottom: 1px solid white;
+                padding: 10px;
+            }
+            .user_list div:hover {
+                background-color:green;
+                color: white;
+                border-bottom: 1px solid white;
+                padding: 10px;
+            }
+            .user:hover .user_list {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="logo">
+                <img class="logo" src="Logo.jpg"/>
+            </div>
+            <div class="items">
+            <div class="inside">Home
+            <div class="options">
+                <div>Options - 1</div>
+                <div>Option - 2</div>
+                <div>Option - 3</div>
+            </div>
+            </div>
+            <div class="inside">About
+                <div class="options">
+                <div>Options - 1</div>
+                <div>Option - 2</div>
+                <div>Option - 3</div>
+                </div>
+            </div>
+            <div class="inside">Product
+                <div class="options">
+                <div>Options - 1</div>
+                <div>Option - 2</div>
+                <div>Option - 3</div>
+                </div>
+            </div>
+            <div class="inside">Retails
+                <div class="options">
+                <div>Options - 1</div>
+                <div>Option - 2</div>
+                <div>Option - 3</div>
+                </div>
+            </div>
+            </div>
+             <div class="user">
+                <i class="fa-solid fa-user" style="position: absolute;  left: 8px; font-size: 40px; color: rgb(16, 15, 19);"></i>
+                <div class="user_list">
+                    <div>Profile</div>
+                    <div>Reset Password</div>
+                    <div>Logout</div>
+                    <div>Edit Profile</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

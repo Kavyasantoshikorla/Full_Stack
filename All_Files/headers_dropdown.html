@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>my page</title>
+        <style>
+            .parent1{
+                idth:100px;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            }
+        .parent{
+            width:100px;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .child1{
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+        }
+        .child2{
+            display: none;
+        }
+        .submenu{
+            padding: 5px;
+        }
+        .submenu:hover{
+            background-color: rgb(12, 16, 23);
+            color: white;
+        }
+        .parent:hover .child2{
+            display: block;
+            cursor: pointer;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="parent1">
+        <div class="parent">
+            <div class="child1">Menu</div>
+            <div class="child2">
+                <div class="submenu">option1</div>
+                <div class="submenu">option2</div>
+                <div class="submenu">option3</div>
+                <div class="submenu">option4</div>
+                <div class="submenu">option5</div>
+            </div>
+        </div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My_Timer</title>
+    </head>
+    <script src="timer.js"></script>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100svh;
+        }
+        .parent{
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            width: 160px;
+            height: 160px;
+            background-color: powderblue;
+            border-radius: 50%;
+            border: 3px solid rgb(33, 187, 207);
+        }
+        .minute,.second,.milli{
+            width: 100px;
+            height: 50px;
+            background-color: rgb(153, 161, 157);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(255, 255, 255);
+            border-radius: 10px;
+            border: 2px solid rgb(33, 187, 207);
+            font-size: 25px;
+        }
+    </style>
+    <body>
+        <div class="parent">
+        <div class="minute"></div>
+        <div class="second"></div>
+        <div class="milli"></div>
+        </div>
+    </body>
+</html>

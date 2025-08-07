@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>My page</title>
+        <style>
+            body{
+                background-color:black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .parent{ 
+                transform-style: preserve-3d;
+                perspective: 100px;
+                width: 250px;
+                height: 250px;
+                border: 2px solid white;
+                perspective-origin: bottom;
+            }
+            .child1{
+                width: 250px;
+                height: 250px;
+                background-color: white;
+                transform-style: preserve-3d;
+                transform: rotateX(200deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <div class="child1">
+            </div>
+            <!-- <div class="child2"></div> -->
+        </div>
+    </body>
+</html>

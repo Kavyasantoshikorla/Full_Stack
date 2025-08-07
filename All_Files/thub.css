@@ -1,0 +1,526 @@
+
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                 background-color: #eaf0f2;
+            }
+            .parent{
+                display: flex;
+                width: 100%;
+                height: 100vh;
+                flex-direction: column;
+                /* position:static; */
+            }
+            .div1{
+                /* display: flex;
+                width: 98%;
+                height:13%;
+                background-color: #ffffff;
+                box-shadow: 0px 4px 2px rgba(19, 18, 18, 0.13);
+                position: fixed;
+                z-index: 1000;
+                padding: 0px 27px; */
+                display: flex;
+                position:fixed;
+                height: 90px;
+                width: 100%;
+                background-color: #ffffff;
+                box-shadow: 0px 4px 2px rgba(19, 18, 18, 0.13);
+                z-index: 200;
+            }
+            .div1 img{
+                margin-left: 20px;
+                margin-top: 13px;
+                width: 200px;
+                height: 67px;
+                /* vertical-align: middle; */
+            }
+            .div1 ul{
+                /* display: block; */
+                display : flex;
+                list-style:none;
+                padding: 0;
+                margin: 0;
+                gap: 60px;
+                margin-left: 69px;
+                margin-top: 34px;
+            }
+            @media (max-width:600px)
+            {
+                .div1 ul{
+                    display: none;
+                }
+            }
+            .font{
+                display: none;
+                position: relative;
+            }
+            .userlist{
+                display: none;
+                position: absolute;
+                
+            }
+            .userlist div {
+                position: relative;
+                top: 40px;
+                border: 1px white solid;
+                background-color: green;
+                width: 50px;
+                padding: 10px 40px;
+            }
+            .userlist div:hover {
+                background-color: rgb(162, 233, 162);
+            }
+            .font:hover .userlist {
+                display: block;
+            }
+            @media (max-width:600px)
+            {
+                .font{
+                    display: block;
+                }
+            }
+            li a{
+                display: block;
+                color: black;
+                text-decoration: none;
+                font-size: 15px;
+                font-weight: 600;
+                font-family: "Poppins", sans-serif;
+                cursor: pointer;
+            }
+            li a:hover{
+                color: green;
+            }
+            .div1 input{
+                margin-left: 500px;
+                width: 100px;
+                height: 50px;
+                font-family: "Poppins", sans-serif;
+                font-size: 15px;
+                border: none;
+                margin-top: 20px;
+                border-radius: 5px;
+                background-color: green;
+                color: white;
+                font-weight: 600;
+            }
+            .div2{
+                display: flex;
+                /* flex-grow: 4; */
+                width: 100%;
+                min-height: 90vh;
+                /* background-color: #eaf0f2; */
+                /* overflow-x: hidden; */
+                /* overflow-y: hidden; */
+            }
+            .image1{
+              width: 530px;
+              height: 500px;
+              transform: translate(-70px,270px);
+            }
+            /* .content{
+                display: flex;
+                height: 450px;
+                transform: translate(70px,80px);
+            } */
+            .dotted{
+                height: 50px;
+                transform: translate(40px,30px);
+                animation-name: myanime;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+            }
+            @keyframes myanime{
+                   from{
+                     transform: translate(40px,30px);
+                   }
+                   to{
+                     transform: translate(70px,30px);
+                   }
+                }
+            .girls{
+                display: flex;
+                height: 560px;
+                transform: translate(-30px,69px);
+                z-index: 2;
+            }
+            .c2{
+                    display: flex;
+                    height:150px;
+                    background-color: rgb(247, 247, 248);
+                    transform: translate(-680px,430px);
+                    border-radius: 10px;
+                    z-index: 6;
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 450;
+                }
+            .t_logo2{
+                    transform: translate(-50px,60px);
+                    width: 170px;
+                    height: 70px;
+                }
+            .c3{
+                    padding-top: 30px;
+                    padding-left: 30px;
+                    /* font-weight: 400;
+                    font-family: "Poppins", sans-serif; */
+                }
+            .c4{
+                    padding-top: 60px;
+                    transform: translateX(-35px);
+                    /* font-weight: 400;
+                    font-family: "Poppins", sans-serif; */
+                }
+            .zigzag{
+                     transform: translate(-920px,100px);
+                     animation-name: myanimation;
+                     animation-duration: 3s;
+                     animation-iteration-count: infinite;
+                     animation-direction: alternate-reverse;
+                }
+                 @keyframes myanimation{
+                    from{
+                        transform:translate(-920px,100px);
+                    }
+                    to{
+                        transform:translate(-820px,100px);
+                    }
+                }
+                .redcircle{
+                    transform: translate(-725px,170px);
+                    z-index: 10;
+                }
+                .greendotted2{
+                    transform: translate(-900px,370px);
+                }
+                .reddotted3{
+                     transform: translate(-1140px,130px);
+                     animation-name: myanime2;
+                     animation-duration: 4s;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
+                }
+                @keyframes myanime2{
+                   from{
+                     transform: translate(-1140px,130px);
+                   }
+                   to{
+                     transform: translate(-1200px,130px);
+                   }
+                }
+                .bluecircle{
+                    transform: translate(-890px,420px);
+                    animation-name: myanime4;
+                    animation-duration: 4s;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate-reverse;
+                }
+                 @keyframes myanime4{
+                   from{
+                     transform: translate(-890px,420px);
+                   }
+                   to{
+                     transform: translate(-930px,420px);
+                   }
+                }
+                .dotted4{
+                    transform: translate(-940px,80px);
+                }
+                .div3{
+                    z-index: 20;
+                    display: flex;
+                    width: 100%;
+                    height: 20%;
+                    transform: translateY(0px);
+                    background-image:linear-gradient(to left,rgb(114, 189, 32), rgb(0, 135, 56));
+                }
+                .course{
+                    width: 50px;
+                    transform: translate(168px,-65px);
+                }
+                .ball{
+                    width: 80px;
+                    height:80px;
+                    background-color: white;
+                    border-radius: 50%;
+                    opacity: 0.2;
+                    margin-left: 150px;
+                    margin-top: 33px;
+                }
+                .first{
+                    border: 1px solid rgb(211, 208, 208);
+                    width: 470px;
+                    border-bottom: none;
+                    border-top: none;
+                    border-left: none;
+                }
+                .name1{
+                    color: rgb(247, 247, 247);
+                    transform: translate(260px,-115px);
+                    font-size: 19px;
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 500;
+                }
+                .ball1{
+                    width: 80px;
+                    height: 80px;
+                    background-color: white;
+                    border-radius: 50%;
+                    opacity: 0.2;
+                    margin-left: 45px;
+                    margin-top: 33px;
+                }
+                .second{
+                    border: 1px solid rgb(211, 208, 208);
+                    width: 300px;
+                    border-bottom: none;
+                    border-top: none;
+                    border-left: none;
+                }
+                .course1{
+                    width: 45px;
+                    transform: translate(68px,-64px);
+                }
+                .name2{
+                    color: rgb(247, 247, 247);
+                    transform: translate(155px,-115px);
+                    font-size: 19px;
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 500;
+                }
+                .course2{
+                    width: 45px;
+                    transform: translate(62px,-60px);
+                }
+                .third{
+                    border: 1px solid rgb(211, 208, 208);
+                    width: 300px;
+                    border-bottom: none;
+                    border-top: none;
+                    border-left: none;
+                }
+                .name3{
+                    color: rgb(247, 247, 247);
+                    transform: translate(155px,-115px);
+                    font-size: 19px;
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 500;
+                }
+                .course3{
+                   width: 49px;
+                    transform: translate(60px,-62px);
+                }
+                .div4{
+                    /* display: flex; */
+                    height: 60%;
+                    background-color: rgb(255, 255, 255);
+                }
+                .profiles{
+                    color: rgb(0, 0, 0);
+                    font-size: 30px;
+                    /* z-index: 1200; */
+                    text-align: center;
+                    transform: translateY(60px);
+                    font-family: "Poppins", sans-serif;
+                    font-weight: bold;
+                }
+                .stroke{
+                    width: 120px;
+                    height: 90px;
+                    position: relative;
+                    top: 25px;
+                    left: 700px;
+                }
+                .div5{
+                    /* display: grid; */
+                    /* grid-template-columns: repeat(3, 1fr); */
+                    width: 300px;
+                    gap: 40px;
+                    /* width: 1000px; */
+                    /* width: 700px; */
+                    margin: auto;
+                    padding: 20px;
+                    /* height: 300px; */
+                    background-color: white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .inner1,.inner2,.inner3,.inner4,.inner5,.inner6,.inner7,.inner8,.inner9{
+                    height: 86px;
+                    /* border: 2px solid orange; */
+                    background: #1AB69D12;
+                    border-radius: 10px;
+                }
+                .inner2{
+                    background:#ee4a6212;
+                }
+                .inner2:hover{
+                    background:#ee4a62;
+                    color: white;
+                }   
+                .inner2:hover .t1{
+                    content: url("web-development\ \(1\).png");
+                }
+                .inner3{
+                    background: #0ecd7312;
+                }
+                .inner3:hover{
+                    background:#0ecd73;
+                    color: white;
+                }   
+                .inner3:hover .t1{
+                    content: url("logic\(1\).png");
+                }
+                .inner4{
+                    background: #f8b81f12;
+                }
+                .inner4:hover{
+                    background:#f8b81f;
+                    color: white;
+                }   
+                .inner4:hover .t1{
+                    content: url("speaker\(1\).png");
+                }
+                .inner5{
+                    background: #8e56ff12;
+                }
+                .inner5:hover{
+                    background:#8e56ff;
+                    color: white;
+                }   
+                .inner5:hover .t1{
+                    content: url("build\(1\).png");
+                }
+                .inner6{
+                    background: #f9259612;
+                }
+                .inner6:hover{
+                    background: #f92596;
+                    color: white;
+                }   
+                .inner6:hover .t1{
+                    content: url("placements\(1\).png");
+                }
+                .inner7{
+                    background: #5866eb12;
+                }
+                .inner7:hover{
+                    background:  #5866eb;
+                    color: white;
+                }   
+                .inner7:hover .t1{
+                    content: url("handshake\ \(1\).png");
+                }
+                .inner8{
+                    background: #f8941f12;
+                }
+                .inner8:hover{
+                    background:  #f8941f;
+                    color: white;
+                }   
+                .inner8:hover .t1{
+                    content: url("intern\(1\).png");
+                }
+                .inner9{
+                    background: #39c0fa12;
+                }
+                .inner9:hover{
+                    background:  #39c0fa;
+                    color: white;
+                }   
+                .inner9:hover .t1{
+                    content: url("gallery\ \(1\).png");
+                }
+                .inner1:hover .t1{
+                    content: url("technology1.png");
+                }
+                .inner1:hover{
+                    background: #1AB69D;
+                    color: white;
+                }
+                .t1{
+                    width: 50px;
+                    position: relative;
+                    top: 19px;
+                    left: 30px;
+                }
+                /* .t2{
+                    width: 50px;
+                    position: relative;
+                    top: 0px;
+                    left: 10px;
+                } */
+                .co1{
+                    position: relative;
+                    left: 90px;
+                    top: -15px;
+                    font-family: "Poppins", sans-serif;
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+                .image1{
+                    position: relative;
+                    bottom: 200px;
+                    left: 10px;
+                    border-radius: 14px;
+                }
+                .rd2{
+                   transform: translate(160px,-50px);
+                } 
+                .div7{
+                    display: flex;
+                    width: 260px;
+                    height: 200px;
+                    justify-content: center;
+                    align-items: center;
+                    background:rgb(255, 255, 255);
+                    position: relative;
+                    bottom: 280px;
+                    left: 550px;
+                    z-index:1;
+                    border-radius: 10px;
+                    flex-direction: column;
+                    box-shadow: 2px 0px 5px rgba(0,0,0,0.3);
+                }
+                .button{
+                    position: relative;
+                    transform: translate(10px,-30px);
+                    width: 60px;
+                    height: 60px;
+                    z-index: 5;
+                }
+                .button:hover{
+                    background-color: green;
+                    border-radius: 50%;
+                }
+                button{
+                    width: 170px;
+                    height: 7px;
+                    background: rgb(233, 229, 229);
+                    transform: translate(-10px,-45px);
+                    border-radius: 50px;
+                    border: none;
+                }
+                .b1{
+                     width: 100px;
+                    height: 6px;
+                    background: rgb(233, 229, 229);
+                    transform: translate(-40px,-25px);
+                    border-radius: 50px;
+                    border: none;
+                }
+                .content{
+                   display: flex;
+                   width: 100vw;
+                   height: auto;
+                }
+                .co2{
+                    position: relative;
+                    bottom: 170px;
+                    left: 170px;
+                }
