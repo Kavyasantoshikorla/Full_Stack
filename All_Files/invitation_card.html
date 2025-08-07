@@ -1,0 +1,223 @@
+<html>
+    <head>
+         <title>Invitation Card</title>
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+         <style>
+             body{
+                height: 100svh;
+                 display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .parent{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transform-style: preserve-3d;
+                transition: transform 1s linear;
+                position: relative;
+                border: 30px black solid;
+            }
+            .parent:hover{
+                transform: rotateY(180deg);
+            }
+            .front{
+                background-color:#b56576;
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 500px;
+                width: 350px;
+                /* color: white; */
+                /* text-align: center; */
+                border-radius: 15px;
+                backface-visibility: hidden;
+                box-shadow: 0px 0px 10px rgba(255)
+            }
+            .back{
+                backface-visibility: hidden;
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 500px;
+                width: 350px;
+                background-color: #6d597a;
+                /* color: white;
+                text-align: center; */
+                border-radius: 15px;
+                transform: rotateY(180deg);
+            }
+            .div1{
+                width: 200px;
+                height: 200px;
+                position: relative;
+                bottom: 150px;
+                left: 21px;
+            }
+            .flower{
+                width: 450px;
+                height: 600px;
+                position: relative;
+                top: 20px;
+                right: 10px;
+            }
+            .content{
+                text-align: center;
+                color: white;
+                position:absolute;
+                top: 210px;
+                color: #eaac8b;
+                font-size: 40px;
+                font-family: "Poppins", sans-serif;
+            }
+            .co2{
+                 text-align: center;
+                color: white;
+                position:absolute;
+                top:260px;
+                color: #eaac8b;
+                font-size: 25px;
+                font-family: "Poppins", sans-serif;;
+            }
+            .co3{
+               position: absolute;
+               top: 70px;
+               color: white;
+               font-size: 15px;
+               word-spacing: 3px;
+               font-family: "Poppins", sans-serif;
+            }
+            .co4{
+                position: absolute;
+                top: 100px;
+                color: white;
+                font-size: 30px;
+                word-spacing: 3px;
+                font-family: "Poppins", sans-serif;;
+            }
+            p{
+                font-family: "Great Vibes", cursive;
+                position: absolute;
+                top: 70px;
+                color: #eaac8b;
+                font-size: 60px;
+            }
+            button{
+                width: 90px;
+                height: 4px;
+                background-color: #eaac8b;
+                border-radius: 2px;
+                border: none;
+                /* position: absolute;
+                top: 280px; */
+            }
+            .co5{
+                position: absolute;
+                top: 270px;
+                color: white;
+                font-size: 20px;
+                word-spacing: 3px;
+                font-family: "Poppins", sans-serif;
+                /* line-height: 50px; */
+            }
+            .co6{
+                position: absolute;
+                top: 300px;
+                color: white;
+                font-size: 20px;
+                word-spacing: 3px;
+                font-family: "Poppins", sans-serif;;
+            }
+            .co7{
+                position: absolute;
+                top: 330px;
+                color: white;
+                font-size: 20px;
+                word-spacing: 3px;
+                font-family: "Poppins", sans-serif;;
+            }
+            .co8{
+                position: absolute;
+                top: 370px;
+                color: white;
+                font-size: 18px;
+                word-spacing: 3px;
+                font-family: "Poppins", sans-serif;;
+            }
+            .co9{
+                position: absolute;
+                top: 400px;
+                color: white;
+                font-size: 18px;
+                word-spacing: 3px;
+                font-family: "Poppins", sans-serif;;
+            }
+            .image1{
+                width: 50px;
+                position:absolute;
+                top: 50px;
+                right: 30px;
+            }
+            /* .image1{
+                width: 80px;
+                position: absolute;
+                bottom: 90px;
+            } */
+             .image2{
+                position: absolute;
+                top: 0;
+                width: 150px;
+             }
+             .div3{
+                width: 40px;
+                position:absolute;
+                top: 290px;
+                left: 30px;
+             }
+             .bg{
+                position: absolute;
+                width: 100%;
+                bottom: 0px;
+                z-index: 2000;
+             }
+         </style>
+    </head>
+    <body>
+        <div class="parent">
+         <div class="front">
+            <!-- <img class="image2" src="lights.png"/> -->
+            <img class="div1" src="graduation_cap.png"/>
+            <img class="div3" src="scribble (1).png"/>
+            <img class="bg" src="illustration-university-graduates.png"/>
+            <div class="content">
+             GRADUATION
+            </div>
+            <div class="co2">
+             CEREMONY
+            </div>
+         </div>
+         <div class="back">
+            <div><img  class="image1" src="sparkling.png"/></div>
+            <div class="co3">
+                Class Of 2027
+            </div>
+            <div class="co4">GRADUATION</div>
+            <p>party</p>
+            <button></button>
+            <div class="co5">It will be held on : </div>
+            <div class="co6">Sunday, 28 September 2027</div>
+            <div class="co7">6:00 PM</div>
+            <div class="co8">At:</div>
+            <div class="co9">Aditya University Surampalem</div>
+         </div>
+         </div>
+    </body>
+</html>

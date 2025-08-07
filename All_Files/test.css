@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* height: 100svh; */
+    background-color: aliceblue;
+}
+h2{
+    margin-top: 100px;
+    text-align: center;
+    color: darkblue;
+}
+.line{
+    width: 200px;
+    height: 3px;
+    border: 2px solid black;
+}
+.parent{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* border: 2px solid black; */
+    gap: 20px;
+    justify-content: space-around;
+}
+.parent div{
+    padding: 30px;
+    border: 1px solid black;
+}

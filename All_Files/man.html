@@ -1,0 +1,440 @@
+<html>
+    <head>
+        <title>Girl</title>
+    <style>
+        .face{
+            width: 70px;
+            height: 50px;
+            border: 2px solid black;
+            position: absolute;
+            top: 100px;
+            left: 550px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            border-top: none;
+            background-color: bisque;
+            z-index: 3;
+        }
+        .hair{
+            width: 73px;
+            height:73px;
+            border-radius: 50%;
+            background-color: black;
+            position: absolute;
+            left: 550px;
+            top: 70px;
+        }
+        .eyes{
+            width:10px ;
+            height: 10px;
+            border-radius: 50%;
+            background-color: rgb(1, 0, 0);
+            position: absolute;
+            left:560px ;
+            top: 110px;
+            z-index: 3;
+        }
+        .eyes1{
+            width:10px ;
+            height: 10px;
+            border-radius: 50%;
+            background-color: rgb(12, 0, 0);
+            position: absolute;
+            left:600px ;
+            top: 110px;
+            z-index: 4;
+        }
+        .nose
+        {
+            font-size: 20px;
+            font-weight: bold;
+            position: relative;
+            left:570px ;
+            top: 105px;
+            z-index: 5;
+        }
+        .lips{
+           width: 15px;
+           height: 5px;
+           background-color: red;
+           border-bottom-left-radius: 100%;
+           border-bottom-right-radius: 100%;
+           position: absolute;
+           left:578px ;
+           top: 135px;
+           z-index: 6;
+        }
+        .ears
+        {
+            width:20px ;
+            height: 20px;
+            border-radius: 50%;
+            background-color: bisque;
+            position: absolute;
+            left:540px ;
+            top: 110px;
+        }
+        .ears1
+        {
+            width:20px ;
+            height: 20px;
+            border-radius: 50%;
+            background-color: bisque;
+            position: absolute;
+            left:613px ;
+            top: 110px;
+        }
+        .body{
+            width: 15px;
+            height: 15px;
+            background-color: bisque;
+            position: absolute;
+             left:578px ;
+             top: 150px;
+        }
+        .body1{
+            width: 50px;
+            height: 63px;
+            background-color: rgb(195, 14, 14);
+             position: absolute;
+             left:560px ;
+             top: 160px;
+             border: 1px solid black;
+        }
+        .line{
+            width: 60px;
+            /* height: 20px; */
+            border: 1px solid black;
+            background-color: black;
+            transform: rotate(90deg);
+            position: absolute;
+             left:555px ;
+             top: 190px;
+        }
+        .c1{
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: white;
+             position: absolute;
+             left:587px ;
+             top: 170px;
+        }
+        .c2{
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: white;
+             position: absolute;
+             left:587px ;
+             top: 179px;
+        }
+        .c3{
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: white;
+             position: absolute;
+             left:587px ;
+             top: 188px;
+        }
+        .c4{
+             width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: white;
+             position: absolute;
+             left:587px ;
+             top: 197px;
+        }
+        .c5{
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: white;
+             position: absolute;
+             left:587px ;
+             top: 207px;
+        }
+        .pocket{
+            width: 15px;
+            height:15px;
+            background-color: white;
+            position: absolute;
+             left:595px ;
+             top: 170px;
+        }
+        .line1{
+            width: 15px;
+            border: 1px solid black;
+            background-color: black;
+             position: absolute;
+             left:595px ;
+             top: 175px;
+        }
+        .bord{
+            width: 49px;
+            height: 5px;
+            border: 2px solid black;
+             position: absolute;
+             left:560px ;
+             top: 225px;
+        }
+        .short{
+            width: 49px;
+            height: 45px;
+            border: 2px solid black;
+             position: absolute;
+             background-color: rgb(167, 107, 35);
+             left:560px ;
+             top: 225px;
+             border-bottom-left-radius: 10px;
+             border-bottom-right-radius: 10px;
+        }
+        .line2{
+             width: 39px;
+            /* height: 20px; */
+            border: 1px solid black;
+            background-color: black;
+            transform: rotate(90deg);
+            position: absolute;
+             left:565px ;
+             top: 252px;
+        }
+        .leg1{
+            width: 12px;
+            height: 60px;
+            border: 2px solid black;
+            position: absolute;
+             left:566px ;
+             top: 273px;
+             background-color: bisque;
+              z-index: 9;
+        }
+        .leg2{
+            width: 12px;
+            height: 60px;
+            border: 2px solid black;
+            position: absolute;
+             left:590px ;
+             top: 273px;
+             background-color: bisque;
+             z-index: 7;
+        }
+        .socks1{
+            width: 12px;
+            height: 3px;
+            border: 2px solid black;
+             position: absolute;
+             left:590px ;
+             top: 315px;
+             z-index: 8;
+        }
+        .socks2{
+            width: 12px;
+            height: 3px;
+            border: 2px solid black;
+             position: absolute;
+             left:566px ;
+             top: 315px;
+             z-index: 10;
+        }
+        .foot{
+            width: 20px;
+            height: 15px;
+            border: 2px solid black;
+             position: absolute;
+             left:562.5px ;
+             top: 325px;
+              background-color: burlywood;
+        }
+        .foot1{
+            width: 20px;
+            height: 15px;
+            border: 2px solid black;
+             position: absolute;
+             left:587px ;
+             top: 325px;
+             background-color: burlywood;
+        }
+        .hands{
+            width: 60px;
+            height: 15px;
+            border: 2px solid black;
+            position: absolute;
+             left:497px ;
+             top: 160px;
+              background-color: rgba(255, 228, 196,0.8);
+        }
+        .hand1{
+            width: 60px;
+            height: 15px;
+            border: 2px solid black;
+            position: absolute;
+             left:610px ;
+             top: 160px;
+              background-color:  rgba(255, 228, 196,0.8);
+        }
+        .box1{
+           width: 22px;
+           height: 15px;
+           border: 2px solid black;
+           position: absolute;
+             left:670px ;
+             top: 160px;
+              background-color:  rgba(255, 228, 196,0.8);
+        }
+        .box2{
+           width: 22px;
+           height: 15px;
+           border: 2px solid black;
+           position: absolute;
+             left:475px ;
+             top: 160px;
+              background-color: rgba(255, 228, 196,0.8);
+        }
+        .f1{
+            width: 6px;
+            height: 13px;
+            border: 1px solid black;
+            position: absolute;
+             left:477px ;
+             top: 145px;
+              background-color: rgba(255, 228, 196,0.8);
+        }
+        .f2{
+            width: 3px;
+            height: 19px;
+            border: 1px solid black;
+            transform: rotate(90deg);
+            position: absolute;
+             left:463px;
+             top: 152px;
+              background-color: rgba(255, 228, 196,0.8);
+        }
+        .f3{
+            width: 3px;
+            height: 24px;
+            border: 1px solid black;
+            transform: rotate(90deg);
+            position: absolute;
+             left:461px ;
+             top: 153.5px;
+              background-color: rgba(255, 228, 196,0.8);
+        }
+        .f4{
+            width: 3px;
+            height: 19px;
+            border: 1px solid black;
+            transform: rotate(90deg);
+            position: absolute;
+             left:463px;
+             top: 160px;
+              background-color:  rgba(255, 228, 196,0.8);
+        }
+        .f5{
+            width: 3px;
+            height: 15px;
+            border: 1px solid black;
+            transform: rotate(90deg);
+            position: absolute;
+             left:465px;
+             top: 166px;
+              background-color: rgba(255, 228, 196,0.8);
+        }
+        .r1{
+            width: 6px;
+            height: 13px;
+            border: 1px solid black;
+            position: absolute;
+            left:685px ;
+            top: 145px;
+             background-color: rgba(255, 228, 196,0.8);
+        }
+        .r2{
+            width: 3px;
+            height: 19px;
+            border: 1px solid black;
+            transform: rotate(90deg);
+            position: absolute;
+             left:703px;
+             top: 153px;
+              background-color:  rgba(255, 228, 196,0.8);
+        }
+        .r3{
+            width: 3px;
+            height: 24px;
+            border: 1px solid black;
+            transform: rotate(90deg);
+            position: absolute;
+             left:705px ;
+             top: 154px;
+             background-color: rgba(255, 228, 196,0.8);
+        }
+        .r4{
+            width: 3px;
+            height: 19px;
+            border: 1px solid black;
+            transform: rotate(90deg);
+            position: absolute;
+             left:703px ;
+             top: 161px;
+             background-color: rgba(255, 228, 196,0.8);
+        }
+        .r5{
+            width: 3px;
+            height: 15px;
+            border: 1px solid black;
+            transform: rotate(90deg);
+            position: absolute;
+             left:700px ;
+             top: 167px;
+             background-color:  rgba(255, 228, 196,0.8);
+        }
+    </style>
+    </head>
+    <body>
+        <div class="face"></div>
+        <div class="hair"></div>
+        <div class="eyes"></div>
+        <div class="eyes1"></div>
+        <div class="nose">  < </div>
+        <div class="lips"></div>
+        <div class="ears"></div>
+        <div class="ears1"></div>
+        <div class="body"></div>
+        <div class="body1"></div>
+        <div class="line"></div>
+        <div class="c1"></div>
+        <div class="c2"></div>
+        <div class="c3"></div>
+         <div class="c4"></div>
+          <div class="c5"></div>
+          <div class="pocket"></div>
+          <div class="line1"></div>
+          <div class="bord"></div>
+          <div class="short"></div>
+          <div class="line2"></div>
+          <div class="leg1"></div>
+          <div class="leg2"></div>
+          <div class="socks1"></div>
+          <div class="socks2"></div>
+          <div class="foot"></div>
+          <div class="foot1"></div>
+          <div class="hands"></div>
+          <div class="hand1"></div>
+          <div class="box1"></div>
+          <div class="box2"></div>
+          <div class="f1"></div>
+           <div class="f2"></div>
+            <div class="f3"></div>
+            <div class="f4"></div>
+            <div class="f5"></div>
+            <div class="r1"></div>
+             <div class="r2"></div>
+             <div class="r3"></div>
+             <div class="r4"></div>
+             <div class="r5"></div>
+        </body>
+</html>
+        

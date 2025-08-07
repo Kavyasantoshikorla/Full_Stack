@@ -1,0 +1,116 @@
+/* Desktop (≥1024px) - Base Styles */
+.about {
+    width: 100%;
+    padding: 100px 0;
+  }
+  
+  .about .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .about .container .content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .about-img {
+    flex: 1;
+    min-width: 400px;
+    max-width: 500px;
+  }
+  
+  .about-img img {
+    width: 100%;
+    max-height: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .about-info {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .about-info .description h3 {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .about-info .description h4 {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .about-info .description h4 span {
+    color: var(--second-color);
+  }
+  
+  .about-info .description p {
+    color: var(--third-color);
+    font-size: var(--normal-font-size);
+    margin-bottom: 15px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid var(--line-color);
+  }
+  
+  .about-info .professional-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  /* Tablet (768px-1023px) */
+  @media (max-width: 1023px) {
+    .about {
+      padding: 80px 0;
+    }
+  
+    .about .container .content {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+  
+    .about-img {
+      min-width: unset;
+      max-width: 450px;
+    }
+  
+    .about-info {
+      text-align: center;
+      max-width: 100%;
+    }
+  
+    .about-info .professional-list {
+      justify-content: center;
+    }
+  }
+  
+  /* Mobile (<768px) */
+  @media (max-width: 767px) {
+    .about {
+      padding: 60px 0;
+    }
+  
+    .about-img {
+      max-width: 100%;
+    }
+  
+    .about-info .description h3 {
+      font-size: 1.8em;
+    }
+  
+    .about-info .description h4 {
+      font-size: 1.1em;
+    }
+  
+    .about-info .professional-list {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }

@@ -1,0 +1,737 @@
+<html>
+    <head>
+        <title>My Page</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+        <style>
+            body{
+                margin: 0;
+                height: 100svh;
+            }
+            .head_{
+                background-color: #0084ff;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                z-index: 20;
+            }
+            .logo {
+                font-family: "Comfortaa", sans-serif;
+                font-size: 30px;
+                padding: 15px;
+                color: white;
+                font-weight: 500;
+            }
+            .menu{
+                color: white;
+                font-size: 30px;
+                padding: 15px;
+            }
+            .box{
+                display: flex;
+                justify-content: center;
+                gap: 50px;
+            }
+            h3,p{
+                color: blue;
+                margin-left: 20px;
+                margin-top: 30px;
+            }
+            p{
+                font-size: 19px;
+                line-height: 28px;
+            }
+             .box1{
+                display: flex;
+                width: 800px;
+                height: auto;
+                margin-top: 79px;
+                background-color:rgb(177, 220, 237);
+                border-radius: 25px;
+             }
+             .box2{
+                position: relative;
+                width: 400px;
+                display: flex;
+                justify-content: center;
+                margin-top: 79px;
+                background-color:#bfeed4;
+                border-radius: 25px;
+             }
+             .but{
+                width: 130px;
+                margin-top: 28px;
+                margin-left: 20px;
+                background-color: blue;
+                border-radius: 50px;
+                color:  white;
+                padding: 10px;
+                text-align: center;
+                letter-spacing: 2px;
+             }
+             .image1{
+                width: 250px;
+                margin: 30px;
+                margin-bottom: 0;
+                border-top-left-radius: 40px;
+                border-top-right-radius: 40px;
+             }
+             .image2{
+                margin-top: 30px;
+             }
+             .con{
+                position:absolute;
+                top: 190px;
+                font-size: 30px;
+                color: #32c474;;
+             }
+             .con1{
+                position:absolute;
+                top: 240px;
+                padding-left: 20px;
+                padding-right: 20px;
+                text-align: center;
+                color: #32c474;
+                font-size: 19px;
+             }
+              .lbox{
+                display: flex;
+                justify-content: center;
+                /* align-items: center; */
+                gap: 25px;
+                padding: 15px;
+              }
+              .lbox>div{
+                width: 375px;
+                height: 360px;
+                border-radius: 25px;
+              }
+              .flex1{
+                display: flex;
+                position: relative;
+                justify-content: center;
+                background-color:#eeaaaa;
+                padding: 10px;
+              }
+              .image3{
+                margin-top: 20px;
+              }
+              .web1{
+                position: absolute;
+                top: 190px;
+                font-size: 30px;
+                color: #f05b5b;
+              }
+              .web2{
+                position:absolute;
+                top: 240px;
+                padding-left: 20px;
+                padding-right: 20px;
+                text-align: center;
+                color: #832020;
+                font-size: 19px;
+              }
+              .flex2{
+                display: flex;
+                position: relative;
+                justify-content: center;
+                background-color:#eab27e;
+                padding: 10px;
+              }
+              .image4{
+                margin-top: 20px;
+              }
+              .dev1{
+                position: absolute;
+                top: 190px;
+                font-size: 30px;
+                color:#ec8321;
+              }
+              .dev2{
+                position:absolute;
+                top: 240px;
+                padding-left: 20px;
+                padding-right: 20px;
+                text-align: center;
+                color:#be6b1e;
+                font-size: 19px;
+              }
+               .flex3{
+                display: flex;
+                position: relative;
+                justify-content: center;
+                background-color:#a7a5ea;
+                padding: 10px;
+              }
+              .image5{
+                margin-top: 20px;
+              }
+              .bran1{
+                position: absolute;
+                top: 190px;
+                font-size: 30px;
+                color:#5651eb;
+              }
+              .bran2{
+                position:absolute;
+                top: 240px;
+                padding-left: 20px;
+                padding-right: 20px;
+                text-align: center;
+                color:#3832e7;
+                font-size: 19px;
+              }
+              .main{
+                width: 100%;
+                background-color: #908cf1;
+                border-radius: 13px;
+                display: flex;
+                justify-content: center;
+              }
+              .main1{
+                  display: flex;
+                  flex-direction: column;
+              }
+              .girl{
+                width: 600px;
+                margin-top: 100px;
+                border-radius: 75px;
+              }
+              .matter {
+                margin-top: 50px;
+                margin-bottom: 100px;
+                width: 600px;
+                transform: translateX(20px);
+              }
+              .matter h3{
+                color: white;
+                font-size: 35px;
+              }
+              .matter p {
+                color: white;
+                font-size: 17px;
+              }
+              .parent_boydiv {
+                width: 500px;
+                border: 2px solid;
+                display: flex;
+                justify-content: center;
+                align-items: end;
+              }
+              .boydiv {
+                width: 350px;
+                height: 600px;
+                background-color: white;
+                border-radius: 25px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+              }
+              .boy{
+                margin-top: 50px;
+                margin-left: 0px;
+                width: 350px;
+                border-radius: 30px;
+              }
+              .boydiv h2 {
+                color: purple;
+              }
+              .boydiv p {
+                margin-top: 50px;
+              }
+              .descrip{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+              }
+              .descrip h2{
+                margin-left: 20px;
+                width: 520px;
+                font-size: 32px;
+                color: #645ff6;
+              }
+              .descrip div{
+                width: 500px;
+                font-size: 16px;
+                text-align: justify;
+              }
+              .profile{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 30px;
+                gap: 40px;
+                /* flex-wrap: wrap; */
+              }
+              .profile .first{
+                width: 700px;
+                background-color:#eeaaaa;
+                border-radius: 20px;
+              }
+              .profile .second{
+                width: 700px;
+                background-color:rgb(208, 208, 63);
+                border-radius: 20px;
+              }
+              .profile .third{
+                width: 700px;
+                background-color:rgb(164, 235, 235);
+                border-radius: 20px;
+              }
+              .third{
+                display: flex;
+              }
+              .first{
+                display: flex;
+                /* width: 60px; */
+              }
+              .p1{
+                 width: 160px;
+                 height: 160px;
+                 border-radius: 50%;
+                 background-color: rgb(234, 227, 227);
+                 margin: 30px;
+               }
+               .cont1{
+                font-size: 18px;
+                margin: 60px;
+                text-align: justify;
+               }
+               .para{
+                display: block;
+               }
+               .n1{
+                margin-top: -30px;
+                margin-left: 55px;
+                font-size: 20px;
+                font-weight: bold;
+               }
+               .second{
+                display: flex;
+               }
+               .b_matter{
+                /* width: 100%; */
+                margin-top: 40px;
+                text-align: center;
+                font-size: 30px;
+                color: white;
+                padding: 20px;
+                background-color:  #908cf1;
+               }
+               .benifits{
+                /* width: 100%; */
+                /* height: 100%; */
+                background-color:  #908cf1;
+               }
+               .grid_items{
+                 display: grid;
+                 grid-template-rows: 1fr 1fr;
+                 grid-template-columns: 1fr 1fr 1fr;
+                 padding: 20px;
+                 gap: 30px;
+               }
+               .grid_items .items{
+                /* width: 100%; */
+                /* height: 300px; */
+                /* aspect-ratio: 3/2; */
+                 /* border: 2px solid black; */
+                 border-radius: 20px;
+                 background-color: #e2e1f6;
+               }
+               .para1{
+                padding-top: 15px;
+                padding-left: 20px;
+                font-size: 50px;
+                color:  #908cf1;
+               }
+               .para2{
+                padding-top: 10px;
+                padding-left: 20px;
+                font-size: 25px;
+                color:  #908cf1;
+               }
+               .para3{
+                /* width: 95%; */
+                /* height: max-content; */
+                padding-left: 20px;
+                padding-top: 25px;
+                color: rgb(87, 84, 84);
+                /* text-align: justify; */
+                font-size: 17px;
+                line-height: 25px;
+                /* letter-spacing: 2px; */
+               }
+               .book{
+                 padding-top: 10px;
+                 padding-left: 10px;
+                 padding-right: 10px;
+                 padding-bottom: 15px;
+                 width: 80px;
+                 height: 20px;
+                 /* border: 1px solid rgb(219, 208, 208); */
+                 margin-left: 15px;
+                 margin-top: 25px;
+                 text-align: center;
+                 background-color: #908cf1;
+                 border-radius: 50px;
+                 color: white;
+                 font-size: 20px;
+                 border: none;
+                 margin-bottom: 50px;
+               }
+               .about{
+                display: flex;
+                gap: 90px;
+                padding-bottom: 150px;
+               }
+               .a_matter{
+                display: flex;
+                flex-direction: column;
+                /* font-size: 70px; */
+               }
+               .a_matter .div1{
+                  width: 400px;
+                  font-size: 50px;
+                  padding-left: 20px;
+                  padding-top: 40px;
+               }
+               .a_matter .div2{
+                padding-left: 20px;
+                padding-top: 20px;
+                font-size: 18px;
+                line-height: 30px;
+               }
+               .a_matter .div3{
+                 padding-left: 20px;
+                padding-top: 50px;
+                font-size: 19px;
+                line-height: 30px;
+               }
+               .p2{
+                 width: 200px;
+                 height: 200px;
+                 border-radius: 50%;
+                 background-color: rgb(145, 140, 140);
+                 margin-top: 30px;
+                 margin-right: 460px;
+               }
+               .p1_matter{
+                width: 340px;
+                margin-top: 30px;
+                font-size: 25px;
+                color: #7976cb;
+                font-weight: bold;
+               }
+               .button{
+                margin-top: 20px;
+                width: 200px;
+                /* height: 60px; */
+                background-color: #5651eb;
+                color: white;
+                border-radius: 10px;
+                /* padding-top: -30px; */
+               }
+               .last{
+                background-color: #645ff6;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+               }
+               .s1{
+                color: white;
+                font-size: 40px;
+                text-align: center;
+                padding-top: 50px;
+               }
+               .s2{
+                color:#fec165;
+                font-size: 80px;
+                text-align: center;
+                padding-top: 30px;
+                font-weight: bold;
+               }
+               .s3{
+                color:#fefefe;
+                font-size: 18px;
+                text-align: center;
+                /* padding-top: 30px; */
+                /* font-weight: bold; */
+                /* padding-left: 145px; */
+               }
+               .s3_div{
+                margin-top: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 500px;
+                /* border: 2px solid white; */
+               }
+               .star{
+                 /* width: 300px; */
+                 /* border: 3px solid black; */
+                 padding: 13px 60px;
+                 background-color: white;
+                 border-radius: 40px;
+                 font-size: 20px;
+                 margin-top: 15px;
+                 color: #7976cb;
+               }
+               .copy{
+                display: flex;
+                color: white;
+                font-size: 18px;
+                margin-top: 20px;
+                gap: 15px;
+                margin-bottom: 120px;
+               }
+               .item{
+                /* display: flex;
+                color: white;
+                gap: 10px;
+                margin-bottom: 10px; */
+                text-decoration: underline;
+               }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="head_">
+           <div class="logo">logo</div>
+           <div class="menu">
+            <i class="fa-solid fa-bars"></i>
+           </div>
+         </div>
+        </header>
+        <div class="box">
+             <div class="box1">
+                <div>
+                <h3>Get a demo application</h3>
+                <p>Duis aute  irure dolor in reprehenderit in voluptate velit easse cillum dolore eu fugiat nulla pariatur excepteur sint mollit anim id.</p>
+                <div class="but">
+                    <i class="fa-brands fa-apple"></i>
+                    Apple store
+                </div>
+                </div>
+                <div>
+                    <img class="image1" src="mobile_ui.jpg"/>
+                </div>
+                </div>
+             <div class="box2">
+                <div>
+                    <img class="image2" src="coding.png"/>
+                </div>
+               <div class="con">Clean Code</div>
+               <div class="con1">Duis aute  irure dolor in reprehenderit in voluptate velit easse cillum dolore eu fugiat nulla pariatur excepteur sint mollit anim id.</div>
+             </div>
+        </div>
+        <div class="lbox">
+            <div class="flex1">
+                <div>
+                    <img class="image3" src="graphic-design.png"/>
+                </div>
+                <div class="web1">Web Design</div>
+               <div class="web2">Duis aute  irure dolor in reprehenderit in voluptate velit easse cillum dolore eu fugiat nulla pariatur excepteur sint mollit anim id.</div>
+            </div>
+            <div class="flex2">
+                <div>
+                    <img class="image4" src="code.png"/>
+                </div>
+                <div class="dev1">Development</div>
+               <div class="dev2">Duis aute  irure dolor in reprehenderit in voluptate velit easse cillum dolore eu fugiat nulla pariatur excepteur sint mollit anim id.</div>
+            </div>
+            <div class="flex3">
+                <div>
+                    <img class="image5" src="public-relation.png"/>
+                </div>
+                <div class="bran1">Development</div>
+               <div class="bran2">Duis aute  irure dolor in reprehenderit in voluptate velit easse cillum dolore eu fugiat nulla pariatur excepteur sint mollit anim id.</div>
+            </div>
+        </div>
+        <div class="main">
+          <div class="main1">
+            <div>
+                <img class="girl" src="./girl_laptop.png"/>
+            </div>
+            <div class="matter">
+              <h3>Strategic Planning</h3>
+              <p>Strategic planning is a crucial organizational process where leaders define a vision for the future,
+                 set goals and objectives, and establish a roadmap for achieving them.
+                  It involves analyzing the current situation, anticipating future challenges, 
+                  and making informed decisions about resource allocation
+                   to ensure the organization stays aligned with its mission and vision.
+                  The senior leadership of an organization is generally tasked with determining strategy. 
+                  It is executed by strategic planners or strategists, who involve many parties and research
+                   sources in their analysis of the organization and its relationship to the environment 
+                   in which it competes.</p>
+            </div>
+          </div>
+          <!-- <div class="parent_boydiv">
+            <div class="boydiv">
+              <div>
+                <img  class="boy" src="boy_idea.png"/>
+                <h2>App Development</h2>
+                <p>App development is the process of creating software applications for mobile devices,
+                   typically smartphones and tablets, or for other computing devices.
+                  </p>
+             </div>  
+            </div>
+          </div> -->
+            
+         </div>
+         <div class="descrip">
+           <h2>We are committed expert partners</h2>
+           <div>we place huge value on strong relationships and have seen the benifit they bring
+          to our business. Customer feedback is vital in helping us to get it right.
+          </div>
+         </div>
+         <div class="profile">
+          <div class="first">
+              <div><img class="p1" src="profile1.png"/></div>
+              <div class="para">
+              <div class="cont1">&ldquo; Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper 
+              feugiat nibh sed pulvinar proin. &rdquo;</div>
+              <div class="n1">CELIA &nbsp; ALMEDA</div>
+              </div>
+          </div>
+          <div class="second">
+            <div><img class="p1" src="profile2.png"/></div>
+            <div class="para">
+            <div class="cont1">&ldquo; Pharetra vel turpis nunc eget lorem. Quisque id diam vel quam elementum pulvinar etiam. Urna porttitor rhoncus dolor
+              purus non enim praesent elementum. &rdquo;</div>
+              <div class="n1">NAT&nbsp; REYNOLDS</div>
+              </div>
+          </div>
+          <div class="third">
+            <div><img class="p1" src="profile3.png"/></div>
+            <div class="para">
+              <div class="cont1">
+                &ldquo; Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh sed pulvinar
+                proin. Nibh nisl condimentum id venenatis a condimentum. &rdquo;
+              </div>
+              <div class="n1">BOB&nbsp; ROBERTS</div>
+            </div>
+          </div>
+         </div>
+         <div class="b_matter">Benifits of working with us</div>
+         <div class="benifits">
+          <div class="grid_items">
+          <div class="items">
+            <div class="para1">
+              01
+            </div>
+            <div class="para2">High Quality</div>
+            <div class="para3">Vitae suscipit tellus mauris a diarm maecenas sed enim ut. Mauris augue neque gravida in fermentum.
+              Praesent semper feugiat nibh sed pulvinar proin id venenatis.
+            </div>
+            <div class="book">more</div>
+          </div>
+          <div class="items">
+            <div class="para1">
+              02
+            </div>
+            <div class="para2">Creative Team</div>
+            <div class="para3">Vitae suscipit tellus mauris a diarm maecenas sed enim ut. Mauris augue neque gravida in fermentum.
+              Praesent semper feugiat nibh sed pulvinar proin id venenatis.
+            </div>
+            <div class="book">more</div>
+          </div>
+          <div class="items">
+            <div class="para1">
+              03
+            </div>
+            <div class="para2">Amazing Results</div>
+            <div class="para3">Vitae suscipit tellus mauris a diarm maecenas sed enim ut. Mauris augue neque gravida in fermentum.
+              Praesent semper feugiat nibh sed pulvinar proin id venenatis.
+            </div>
+            <div class="book">more</div>
+          </div>
+          <div class="items">
+            <div class="para1">
+              04
+            </div>
+            <div class="para2">Best Pricing</div>
+            <div class="para3">Vitae suscipit tellus mauris a diarm maecenas sed enim ut. Mauris augue neque gravida in fermentum.
+              Praesent semper feugiat nibh sed pulvinar proin id venenatis.
+            </div>
+            <div class="book">more</div>
+          </div>
+          <div class="items">
+            <div class="para1">
+              05
+            </div>
+            <div class="para2">Innovations</div>
+            <div class="para3">Vitae suscipit tellus mauris a diarm maecenas sed enim ut. Mauris augue neque gravida in fermentum.
+              Praesent semper feugiat nibh sed pulvinar proin id venenatis.
+            </div>
+            <div class="book">more</div>
+          </div>
+          <div class="items">
+            <div class="para1">
+              06
+            </div>
+            <div class="para2">24/7 Support</div>
+            <div class="para3">Vitae suscipit tellus mauris a diarm maecenas sed enim ut. Mauris augue neque gravida in fermentum.
+              Praesent semper feugiat nibh sed pulvinar proin id venenatis.
+            </div>
+            <div class="book">more</div>
+          </div>
+          </div>
+         </div>
+         <div class="about">
+            <div class="a_matter">
+            <div class="div1">About us</div>
+            <div class="div2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+               incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+          <div class="div3">Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum,
+             a 1st-century BCE text by the Roman statesman and philosopher Cicero, with words altered,
+              added, and removed to make it nonsensical and improper Latin. The first two words are the truncation of dolorem 
+              ipsum.</div>
+          </div>
+          <div class="pro_matter">
+          <div>
+            <img class="p2" src="profile4.png"/>
+          </div>
+          <div class="p1_matter">I help companies tincidunt tortor aliquam nulla facilisicras fermentum odio.</div>
+          <div class="button">
+            <i class="fa-brands fa-linkedin" style="color: #ffffff ;padding: 20px 0 20px 20px; font-size: 25px;"></i>
+            Find me on LinkedIn
+          </div>
+          </div>
+          </div>
+          <!-- <div class="last">
+              <div class="s1">Simple, Transparent Pricing</div>
+              <div class="s2">It's Free!</div>
+              <div class="s3_div">
+              <div class="s3">we're still in beta and we will be for awhile. 
+                As we add more functionality, we'll look into 
+                other plans with more controls.</div>
+                </div>
+                <div class="star">Get Started</div>
+                <div class="copy">
+                 <div>Copyright 2021 nicepage.com</div>
+                 <div class="item">Terms of Service</div>
+                 <div class="item">Privacy Policy</div> -->
+                 <!-- <ul class="item">
+                  <li><a href="#">Terms of Service</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                 </ul> -->
+          </div>
+         <div class="foot">
+               <div>Sample text. </div>
+        </div>
+    </body>
+</html>

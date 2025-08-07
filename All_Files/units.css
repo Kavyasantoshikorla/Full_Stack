@@ -1,0 +1,32 @@
+.first{
+    font-size: 96px;
+}
+.second{
+    font-size: 1in;
+}
+.heading{
+    /* border-top-width: 50px; */
+    border-top: 1px;
+    border-top-color: red;
+    border-top-style: solid;
+    
+    border-right: 3px;
+    border-right-color: pink;
+    border-right-style: groove;
+
+    border-left: 6px;
+    border-left-color: rgb(179, 25, 51);
+    border-left-style: dashed;
+
+    border-bottom: 6px;
+    border-bottom-color: plum;
+    border-bottom-style: dotted;
+
+}
+.heading2{
+    text-align: center;
+    width: 500px;
+    height: 50px;
+    border: 5px groove khaki;
+    border-radius: 50px;
+}

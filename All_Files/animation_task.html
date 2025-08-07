@@ -1,0 +1,367 @@
+<html>
+    <head>
+        <title>My Page</title>
+        <style>
+            body{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .section1{
+                display: flex;
+                width: 100%;
+                height: 5%;
+                background-color: rgb(105, 113, 119);
+            }
+            .section2{
+                  display: flex;
+                width: 100%;
+                height: 75%;
+                background-image: linear-gradient(rgb(171, 206, 236),rgb(246, 246, 82),orange);
+                animation-name: myanimation1;
+                animation-duration: 4s;
+            }
+            .section3{
+                  display: flex;
+                width: 100%;
+                height: 20%;
+                background-color:  rgb(13, 13, 13);
+            }
+            .childd{
+                width: 100px;
+                height: 40px;
+                background-color: white;
+                position: absolute;
+                top: 630px;
+                left:0px;
+            }
+            .child{
+                width: 100px;
+                height: 40px;
+                background-color: white;
+                position: absolute;
+                top: 630px;
+                left: 160px;
+            }
+            .child1{
+                width: 100px;
+                height: 40px;
+                background-color: white;
+                position: absolute;
+                left: 320px;
+                top: 630px;
+            }
+            .child2{
+                width: 100px;
+                height: 40px;
+                background-color: white;
+                position: absolute;
+                left: 480px;
+                top: 630px;
+            }
+            .child3{
+                width: 100px;
+                height: 40px;
+                background-color: white;
+                position: absolute;
+                left: 640px;
+                top: 630px;
+            }
+            .child4{
+                width: 100px;
+                height: 40px;
+                background-color: white;
+                position: absolute;
+                left: 800px;
+                top: 630px;
+            }
+            .child5{
+                width: 100px;
+                height: 40px;
+                background-color: white;
+                position: absolute;
+                right: 960px;
+                top: 630px;
+            }
+            .child6{
+                width: 100px;
+                height: 40px;
+                background-color: white;
+                position: absolute;
+                right: 470px;
+                top: 630px;
+            }
+            .child7{
+                width: 100px;
+                height: 40px;
+                background-color: white;
+                position: absolute;
+                right: 300px;
+                top: 630px;
+            }
+            .child8{
+                width: 100px;
+                height: 40px;
+                background-color: white;
+                position: absolute;
+                right: 150px;
+                top: 630px;
+            }
+            .child9{
+                width: 100px;
+                height: 40px;
+                background-color: white;
+                position: absolute;
+                right: 10px;
+                top: 630px;
+            }
+            /* .section4{
+                width: 100%;
+                height: 5%;
+                background-color: rgb(5, 94, 5);
+            } */
+            .sun{
+                  display: flex;
+                width: 130px;
+                height: 130px;
+                /* display: flex; */
+                border-radius: 50%;
+                background-color: rgb(245, 245, 6);
+                position: relative;
+                top: 70px;
+                left: 800px;
+                box-shadow: 0px 0px 30px yellow;
+                animation-name: moon;
+                animation-duration: 4s;
+            }
+            .clouds{
+                  display: flex;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background-color: white;
+                position: relative;
+                top: 80px;
+                left: -70px;
+            }
+            .cloud1{
+                  display: flex;
+                 width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                background-color: white;
+                position: relative;
+                top: 73px;
+                left: -90px ;       
+                }
+                .cloud2{
+                display: flex;
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                background-color: white;
+                position: relative;
+                top: 67px;
+                left: -110px ; 
+                }
+            .cloud3{
+                  display: flex;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background-color: white;
+                position: relative;
+                top: 150px;
+                left: 240px;
+            }
+            .cloud4{
+                  display: flex;
+                 width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                background-color: white;
+                position: relative;
+                top: 144px;
+                left: 220px;
+            }
+             .cloud5{
+                  display: flex;
+                 width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                background-color: white;
+                position: relative;
+                top: 137px;
+                left: 200px;
+            }
+            .mountain{
+                  display: flex;
+                 border-left: 100px solid transparent ;
+                border-right: 100px solid transparent;
+                border-bottom: 200px solid rgb(227, 145, 37);
+                /* border: 2px solid black; */
+                 position: relative;
+                 bottom: 0px;
+                 left: 100px ; 
+                 z-index: 6;
+            }
+            .mountain1{
+                display: flex;
+                 border-left: 120px solid transparent ;
+                border-right: 120px solid transparent;
+                border-bottom: 250px solid rgb(227, 145, 37);
+                 position: relative;
+                 bottom: 0px;
+                 right:200px ; 
+            }
+            .tree1{
+                display: flex;
+                width: 70px;
+                height: 200px;
+                background-color:rgb(237, 172, 86);
+                position: relative;
+                 top: 335px;
+                 right:400px ;
+            }
+            /* .leavf1{
+                display: flex;
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                background-color: green;
+                position: relative;
+                top: -10px;
+                right: 50px ;
+                z-index: 2;
+            } */
+            .leavf2{
+                 width: 120px;
+                height: 50px;
+                background-color: green;
+                border-top-left-radius: 100% 100%;
+                border-bottom-left-radius: 100% 100%;
+               transform: rotate(-20deg);
+               position: absolute;
+               left: -80px;
+               bottom: 140px;
+            }
+            .leavf3{
+                 width: 120px;
+                height: 50px;
+                background-color: green;
+                border-top-left-radius: 100% 100%;
+                border-bottom-left-radius: 100% 100%;
+               transform: rotate(20deg);
+               position: absolute;
+               left: -90px;
+               bottom: 180px;
+            }
+            .leavf4{
+                 width: 120px;
+                height: 50px;
+                background-color: green;
+                border-top-left-radius: 100% 100%;
+                border-bottom-left-radius: 100% 100%;
+               transform: rotate(70deg);
+               position: absolute;
+               left: -50px;
+               bottom: 230px;
+            }
+            .leavf5{
+                 width: 120px;
+                height: 50px;
+                background-color: green;
+                border-top-left-radius: 100% 100%;
+                border-bottom-left-radius: 100% 100%;
+               transform: rotate(120deg);
+               position: absolute;
+               left: 20px;
+               bottom: 220px;
+            }
+            .leavf6{
+                 width: 120px;
+                height: 50px;
+                background-color: green;
+                border-top-left-radius: 100% 100%;
+                border-bottom-left-radius: 100% 100%;
+               transform: rotate(190deg);
+               position: absolute;
+               left: 30px;
+               bottom: 150px;
+            }
+            .car{
+                width: 150px;
+                height: 120px;
+                 position: absolute;
+               left: 830px;
+               bottom: -120px;
+               z-index:5;
+               animation-name: myanimation;
+               animation-duration: 2s;
+               animation-iteration-count: 2;
+               animation-timing-function: linear;
+
+            }
+            @keyframes myanimation{
+                from{
+                    left: 830px;
+                }
+                to{
+                    left:-520px;
+                }
+            }
+            @keyframes myanimation1{
+                20%{
+                   background-image: linear-gradient(rgb(3, 3, 77));
+                }
+                100%{
+                   background-image: linear-gradient(black);
+                }
+            }
+            @keyframes moon{
+            20%{
+                background-color: white;
+                box-shadow: 0px 0px 20px white;
+            }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="section1"></div>
+        <div class="section2">
+             <div class="mountain"></div>
+             <div class="mountain1"></div>
+            <div class="sun"></div>
+            <div class="clouds"></div>
+            <div class="cloud1"></div>
+            <div class="cloud2"></div>
+            <div class="cloud3"></div>
+            <div class="cloud4"></div>
+            <div class="cloud5"></div>
+            <div class="tree1">
+                <!-- <div class="leavf1"></div> -->
+                <div class="leavf2"></div>
+                <div class="leavf3"></div>
+                <div class="leavf4"></div>
+                <div class="leavf5"></div>
+                <div class="leavf6"></div>
+                <div>
+                   <img  class= "car" src="car.png">
+                </div>
+            </div>
+        </div>
+        <div class="section3">
+            <div class="childd"></div>
+            <div class="child"></div>
+            <div class="child1"></div>
+            <div class="child2"></div>
+            <div class="child3"></div>
+            <div class="child4"></div>
+            <div class="child5"></div>
+            <div class="child6"></div>
+            <div class="child7"></div>
+            <div class="child8"></div>
+            <div class="child9"></div>
+            
+        </div>
+    </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Schedule, Track and Pay with EASE</title>
+  <link rel="stylesheet" href="style for main.css"/>
+</head>
+<body>
+  <header>
+    <h1>Schedule, Track and Pay with EASE</h1>
+    <p>Plan your payments, skip the queues, and stay informed.</p>
+  </header>
+
+  <main>
+    <!-- 🔄 Queue Tracker -->
+    <section class="card">
+      <h2>🔄 Queue Tracker</h2>
+      <p><strong>Current Queue:</strong> 15 students</p>
+      <p><strong>Currently Serving:</strong> Token #25</p>
+      <p><em>Tip: Visit after 1 PM to avoid long wait times.</em></p>
+    </section>
+
+    <!-- ⏱ Waiting Time Estimation -->
+    <section class="card">
+      <h2>⏱ Waiting Time Estimation</h2>
+      <p><strong>Estimated Wait:</strong> 20 minutes</p>
+      <p><strong>Your Turn:</strong> Around 11:45 AM</p>
+    </section>
+
+    <!-- 📅 Slot Bookings -->
+    <section class="card">
+      <h2>📅 Slot Booking</h2>
+      <form>
+        <label for="date">Select Date:</label><br>
+        <input type="date" id="date" name="date"><br><br>
+
+        <label for="time">Select Time Slot:</label><br>
+        <select id="time" name="time">
+          <option>10:00 AM - 10:30 AM</option>
+          <option>11:00 AM - 11:30 AM</option>
+          <option>12:00 PM - 12:30 PM</option>
+        </select><br><br>
+
+        <button type="button">Book Slot</button>
+      </form>
+    </section>
+
+    <!-- 🆘 Help Center -->
+    <section class="card">
+      <h2>🆘 Help Center</h2>
+      <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" placeholder="Your Name"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" placeholder="you@example.com"><br><br>
+
+        <label for="subject">Request Type:</label><br>
+        <select id="subject">
+          <option>Fee Reduction</option>
+          <option>Fine Waiver</option>
+          <option>Permission to Delay Payment</option>
+        </select><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" rows="4" placeholder="Write your request here..."></textarea><br><br>
+
+        <button type="button">Submit Request</button>
+      </form>
+    </section>
+
+    <!-- 🔔 Alerts -->
+    <section class="card alert-section">
+      <h2>🔔 Alerts</h2>
+      <div class="alert alert-info">📢 Your slot is in 10 minutes.</div>
+      <div class="alert alert-success">✅ Payment Successful.</div>
+      <div class="alert alert-warning">⚠️ Fine Due: ₹500. Pay before June 5.</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Schedule & Pay. All rights reserved.</p>
+  </footer>
+</body>
+</html>

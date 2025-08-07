@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <title>My Page</title>
+        <style>
+            .demo{
+                width: 150px;
+                height: 150px;
+                background-color: rgb(235, 148, 162);
+                animation-name: Myanimation;
+                animation-duration: 3s;
+                animation-timing-function: ease-in;
+                /* animation-timing-function: linear; */
+                animation-iteration-count: infinite;
+                animation-direction: alternate-reverse;
+                position: relative;
+                left: 0px;
+
+            }
+            .demo1{
+                width: 150px;
+                height: 150px;
+                background-color: rgb(242, 105, 128);
+                animation-name: myanime;
+                animation-duration: 3s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+                animation-direction: alternate-reverse;
+                position: relative;
+                left: 0px;
+            }
+            .demo2{
+                width: 150px;
+                height: 150px;
+                background-color: rgb(232, 29, 63);
+                animation-name: myanime2;
+                animation-duration: 3s;
+                animation-timing-function: ease-out;
+                animation-iteration-count: infinite;
+                animation-direction: alternate-reverse;
+                position: relative;
+                left: 0px;
+            }
+            @keyframes Myanimation {
+                0%{
+                    background-color:  rgb(232, 167, 232);
+                    left: 0px;
+                }
+                /* 50%{
+                    background-color: violet;
+                    left: 200px;
+                } */
+                 100%{  
+                    border-radius: 50%;
+                    background-color:rgb(209, 39, 209);
+                    left: 300px;
+                } 
+            }
+            @keyframes myanime{
+                0%{
+                    background-color:  rgb(232, 167, 232);
+                    left: 0px;
+                }
+                /* 50%{
+                    background-color: violet;
+                    left: 200px;
+                } */
+                 100%{  
+                    border-radius: 50%;
+                    background-color:rgb(209, 39, 209);
+                    left: 300px;
+                } 
+            }
+             @keyframes myanime2{
+                0%{
+                    background-color:  rgb(232, 167, 232);
+                    left: 0px;
+                }
+                /* 50%{
+                    background-color: violet;
+                    left: 200px;
+                    border-radius: 25%;
+                } */
+                 100%{  
+                    border-radius: 50%;
+                    background-color:rgb(209, 39, 209);
+                    left: 300px;
+                } 
+            }
+
+
+
+                 /* Different Stages */
+                /* 0%{
+                    background-color: palevioletred;
+                }
+                50%{
+                    background-color: plum;
+                }
+                70%{
+                    background-color: violet;
+                }
+                100%{
+                    background-color: purple;
+                } */
+        </style>
+    </head>
+    <body>
+       <div class="demo"></div>
+       <div class="demo1"></div>
+       <div class="demo2"></div>
+
+    </body>
+</html>

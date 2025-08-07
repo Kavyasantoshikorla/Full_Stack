@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: #006666;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      overflow-x: hidden;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      color: #003333;
+    }
+
+    .section-title {
+      font-size: 24px;
+      color: #003333;
+      margin: 20px 0 10px;
+    }
+
+    .slot-group {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .slot-column {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .slot {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    input[type="radio"] {
+      transform: scale(1.5);
+      accent-color: #006666;
+      margin-top: 5px;
+    }
+
+    .slot-box {
+      background: #e6ffe6;
+      border: 2px solid #006633;
+      padding: 10px 15px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #003300;
+    }
+
+    .slot-info {
+      font-size: 14px;
+      padding-left: 35px;
+    }
+
+    .available {
+      color: #2e8b57;
+    }
+
+    .booked {
+      color: #cc0000;
+    }
+
+    .date-picker {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    input[type="date"] {
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Book a slot, take a break</h1>
+
+  <div class="date-picker">
+    <p>Please select date and time</p>
+    <label>Enter Date:</label>
+    <input type="date">
+  </div>
+
+  <h2 class="section-title">Available times</h2>
+
+  <div class="slot-group">
+    <!-- Morning -->
+    <div class="slot-column">
+      <div class="section-header">🌅 Morning</div>
+      <div class="slot">
+        <input type="radio" name="slot">
+        <div>
+          <div class="slot-box">9:30 am - 10:00 am</div>
+          <div class="slot-info">
+            <span class="available">Available: 100</span> |
+            <span class="booked">Booked: 70</span>
+          </div>
+        </div>
+      </div>
+      <!-- More morning slots... -->
+    </div>
+
+    <!-- Lunch Break -->
+    <div class="slot-column">
+      <div class="section-header">🍴 Lunch Break</div>
+      <div class="slot">
+        <input type="radio" name="slot">
+        <div>
+          <div class="slot-box">12:00 pm - 12:30 pm</div>
+          <div class="slot-info">
+            <span class="available">Available: 80</span> |
+            <span class="booked">Booked: 20</span>
+          </div>
+        </div>
+      </div>
+      <!-- More lunch slots... -->
+    </div>
+
+    <!-- Afternoon -->
+    <div class="slot-column">
+      <div class="section-header">🌞 AfterNoon</div>
+      <div class="slot">
+        <input type="radio" name="slot">
+        <div>
+          <div class="slot-box">01:30 pm - 02:00 pm</div>
+          <div class="slot-info">
+            <span class="available">Available: 20</span> |
+            <span class="booked">Booked: 100</span>
+          </div>
+        </div>
+      </div>
+      <!-- More afternoon slots... -->
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

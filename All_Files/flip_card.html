@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>My Card</title>
+        <style>
+            body{
+                height: 100svh;
+                 display: flex;
+                justify-content: center;
+                align-items: center;
+                perspective: 500px;
+            }
+            .grandparent{
+                /* perspective: 100px; */
+            }
+            .parent{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transform-style: preserve-3d;
+                transition: transform 1s linear;
+                /* position: relative; */
+            }
+            .parent:hover{
+                transform: rotateY(-180deg);
+                 /* backface-visibility: hidden; */
+            }
+            .front{
+                /* position: absolute; */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 150px;
+                width: 200px;
+                background-color: rgb(233, 187, 126);
+                color: white;
+                text-align: center;
+                backface-visibility: hidden;
+            }
+            .back{ 
+                backface-visibility: hidden;
+                /* position: absolute; */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 150px;
+                width: 200px;
+                background-color: darkmagenta;
+                color: white;
+                text-align: center;
+                transform: rotateY(180deg);
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <div class="grandparent"> -->
+        <div class="parent">
+        <div class="front">
+            Name : K. Kavya Santoshi
+        </div>
+        <div class="back">
+            Roll no : 23p31a0531
+        </div>
+        </div>
+        <!-- </div> -->
+    </body>
+</html>
