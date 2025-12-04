@@ -98,11 +98,11 @@ body{
   .heading h2{
     font-size: 15px;
   }
-  .menu i{
+  .menu {
     font-size: 18px;
   }
 }
-@media (min-width:1025px)
+@media (min-width:1024px)
 {
   img{
     width:700px;

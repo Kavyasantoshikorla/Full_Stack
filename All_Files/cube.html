@@ -7,9 +7,9 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                perspective: 600px;
+                perspective: 100px;
             }
-        .cube{
+           .cube{
             display: flex;
             justify-content: center;
             align-items: center;
@@ -18,12 +18,12 @@
             transform-style: preserve-3d;
             animation: myanimation 5s infinite linear;
             position: relative;
-        }
-        @keyframes myanimation {
+          }
+         @keyframes myanimation {
             100%{
              transform:rotateX(360deg) rotateY(360deg);
             }
-        }
+         }
         .left{
             display: grid;
             grid-template-columns: repeat(3,3fr);
