@@ -11,7 +11,7 @@ const myfunc=async()=>{
    const result1 = await getUserDetails("123");
    console.log(result1);
    console.log("456");
-   const result2 = await getUserDetails("167");
-   console.log(result2);
+//    const result2 = await getUserDetails("167");
+//    console.log(result2);
 };
 myfunc()
