@@ -1,4 +1,5 @@
 import express from 'express'
+import router from './routers/studentRoutes.js';
 const app = express();
 const port = 6000;
 // middleware
@@ -22,6 +23,9 @@ app.delete('/delete-user',(req,res)=>{
     console.log(data);
     res.send("data deleted");
 })
+// app.all('*', (req, res) => {
+//   res.status(404).send('404 - Page not found');
+// });
 app.listen(port,()=>{
     console.log(`server running at the post ${port}`);
 })
