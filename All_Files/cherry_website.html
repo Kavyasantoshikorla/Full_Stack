@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Special Items - Christmas Offer</title>
+    <link rel="stylesheet" href="cherry.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="cherry_logo-removebg-preview.png" />
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="fa fa-bars"></i>
+     </div>
+      </header>
+      <nav class="menu" id="menu">
+  <ul>
+    <li class="menu-title">STARTERS</li>
+    <li><a href="#crispyveg" onclick="toggleMenu()">Crispy Veg</a></li>
+    <li><a href="#bellpepper" onclick="toggleMenu()">Veg Bellpepper</a></li>
+    <li><a href="#babycorn" onclick="toggleMenu()">Gold Fry Babycorn</a></li>
+    <li><a href="#sangrilla" onclick="toggleMenu()">Veg Sangrilla</a></li>
+    <li><a href="#bullet" onclick="toggleMenu()">Veg Bullet</a></li>
+    <li><a href="#paneerfinger" onclick="toggleMenu()">Paneer Cheese Finger</a></li>
+    <li><a href="#lollipop" onclick="toggleMenu()">Veg Lollipop</a></li>
+    <li><a href="#mushroompepper" onclick="toggleMenu()">Salt & Pepper Mushroom</a></li>
+    <li class="menu-title">CURRIES</li>
+    <li><a href="#shahipaneer" onclick="toggleMenu()">Shahi Paneer</a></li>
+    <li><a href="#malai" onclick="toggleMenu()">Malai Kofta</a></li>
+    <li><a href="#hyderabadi" onclick="toggleMenu()">Veg Hyderabadi</a></li>
+    <li><a href="#keema" onclick="toggleMenu()">Veg Keema Curry</a></li>
+    <li><a href="#gobimasala" onclick="toggleMenu()">Gobi Masala</a></li>
+    <li><a href="#dopyaza" onclick="toggleMenu()">Mushroom Dopyaza</a></li>
+    <li><a href="#kalimirimasala" onclick="toggleMenu()">Veg Kalimiri Masala</a></li>
+    <li><a href="#lavabdar" onclick="toggleMenu()">Paneer Lavabdar</a></li>
+  </ul>
+</nav>
+<section class="parent-container">
+  <h1 class="menu-title">Our Special Menu</h1>
+  <div class="items-grid">
+    <div class="menu-item" id="crispyveg">
+      <h3>Crispy Veg</h3>
+      <p>Golden-fried mixed vegetables tossed in light spices, 
+        crispy on the outside and tender inside.</p>
+      <p>A perfect crunchy starter</p>
+      <img src="crispyveg.jpg" alt="Crispy Veg" />
+    </div>
+    <div class="menu-item" id="bellpepper">
+      <h3>Veg Bellpepper</h3>
+      <p>Crispy bell pepper slices fried to perfection and 
+        tossed with mild spices.</p>
+      <p>Crunchy, flavorful</p>
+       <img src="bellpepper.WEBP" alt="bellpepper" />
+    </div>
+    <div class="menu-item" id="babycorn">
+      <h3>Gold Fry Babycorn</h3>
+      <p>Butter fried babycorn served crispy</p>
+      <img src="babycorn.AVIF" alt="Babycorn" />
+    </div>
+    <div class="menu-item" id="sangrilla">
+      <h3>Veg Sangrilla</h3>
+      <p>Paneer graded, kaju grinded, veggies chopped served like cookie.</p>
+      <img src="sangrilla.JPG" alt="Sangrilla" />
+    </div>
+    <div class="menu-item" id="bullet">
+      <h3>Veg Bullet</h3>
+      <p>Spiced mixed vegetable balls deep-fried till golden and crisp..</p>
+      <p>Crispy outside, soft and flavorful inside.</p>
+      <img src="bullet.JPG" alt="Sangrilla" />
+    </div>
+    <div class="menu-item" id="paneerfinger">
+      <h3>Paneer cheese finger</h3>
+      <p>Crispy paneer cheese fingers coated in a crunchy crumb and fried golden.</p>
+      <p>Melty inside, crisp outside—an irresistible starter.</p>
+      <img src="paneer.webp" alt="Paneer cheese finger"/>
+    </div>
+    <div class="menu-item" id="lollipop">
+      <h3>Veg lollypop</h3>
+      <p>Minced mixed vegetables shaped into lollipops and deep-fried till golden crisp.</p>
+      <p>Crunchy outside with a spicy, flavorful center.</p>
+      <img src="veglolly.JPG" alt="Paneer cheese finger"/>
+    </div>
+    <div class="menu-item" id="mushroompepper">
+      <h3>Salt and pepper mushroom</h3>
+      <p>Crispy fried mushrooms tossed with salt, cracked pepper, and light spices.</p>
+      <p>A perfect balance of crunch, heat, and earthy flavor.</p>
+      <img src="mushroom_pepper.JPG" alt="Paneer cheese finger"/>
+    </div>
+    <div class="menu-item" id="shahipaneer">
+      <h3>Sahi paneer</h3>
+      <p>Soft paneer cubes simmered in a rich, creamy cashew-tomato gravy.</p>
+      <p>A royal North Indian delicacy with mild spices and deep flavors.</p>
+      <img src="sahipanner.JPG" alt="Paneer cheese finger"/>
+    </div>
+    <div class="menu-item" id="malai">
+      <h3>Malai kofta</h3>
+      <p>Soft paneer and vegetable koftas cooked in a rich, creamy malai gravy.</p>
+      <p>A royal North Indian delicacy with mildly spiced, luscious flavors.</p>
+      <img src="malai.JPG" alt="malai"/>
+    </div>
+    <div class="menu-item" id="hyderabadi">
+      <h3>Veg hyderabadi</h3>
+      <p>Mixed vegetables cooked in a rich Hyderabadi-style gravy with aromatic spices.</p>
+      <p>A flavorful dish with a perfect balance of spice and richness.</p>
+      <img src="veghyderabadi.jpg" alt="Veg hyderabadi"/>
+    </div>
+    <div class="menu-item" id="keema">
+      <h3>Veg keema curry</h3>
+      <p>Finely minced vegetables cooked in a spicy, flavorful masala.</p>
+      <p>A hearty vegetarian twist on the classic keema curry.</p>
+      <img src="vegkeema.JPG" alt="Veg keema curry"/>
+    </div>
+     <div class="menu-item" id="gobimasala">
+      <h3>Gobi masala curry</h3>
+      <p>Tender cauliflower florets cooked in a rich, spiced onion-tomato gravy.</p>
+      <p>A comforting curry bursting with classic masala flavors.</p>
+      <img src="gobi.JPG" alt="Gobi masala curry"/>
+    </div>
+    <div class="menu-item" id="dopyaza">
+      <h3>Mushroom dopyaza</h3>
+      <p>Fresh mushrooms cooked with double the onions in a rich, spiced gravy.</p>
+      <p>A flavorful dopyaza curry with a perfect balance of sweetness and spice.</p>
+      <img src="dopyaza.JPG" alt="Mushroom dopyaza"/>
+    </div>
+    <div class="menu-item" id="kalimirimasala">
+      <h3>Veg kalimiri masala</h3>
+      <p>Mixed vegetables cooked in a creamy black pepper (kalimiri) spiced gravy.</p>
+      <p>Rich, aromatic, and mildly spicy with a peppery kick.</p>
+      <img src="kalimiri.jpg" alt="Veg kalimiri masala"/>
+    </div>
+    <div class="menu-item" id="lavabdar">
+      <h3>Veg paneer lavabdar</h3>
+      <p>Soft paneer coated and fresh vegetables simmered in a rich, creamy, mildly spiced gravy.</p>
+      <p>A luscious, flavorful North Indian classic.</p>
+      <img src="lavabdar.JPG" alt="Veg paneer lavabdar"/>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-col">
+      <img src="cherry_logo-removebg-preview.png" alt="Cherries Logo" class="footer-logo">
+      <p>Delicious vegetarian food served fresh with love.</p>
+
+      <div class="social-icons">
+        <i class="fa-brands fa-linkedin-in"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-whatsapp"></i>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <p><i class="fa fa-map-marker"></i> MG Road, Hyderabad, India</p>
+      <p><i class="fa fa-phone"></i> +91 98765 43210</p>
+      <p><i class="fa fa-envelope"></i> cherries@gmail.com</p>
+    </div>
+    <div class="footer-col">
+      <h4>Opening Hours</h4>
+      <p>Mon – Fri: 10:00 AM – 10:00 PM</p>
+      <p>Sat – Sun: 9:00 AM – 11:00 PM</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2025 Cherries Restaurant. All Rights Reserved.
+  </div>
+</footer>
+  <script>
+  function toggleMenu() {
+    document.getElementById("menu").classList.toggle("active");
+  }
+</script>
+  </body>
+</html>
